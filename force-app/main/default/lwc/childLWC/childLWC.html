@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Child :">
+       <lightning-button variant="brand" label="Child Button" onclick={handleClick}></lightning-button> <br/>
+       <template lwc:if={isClicked}>
+        This is Child :{childmessage} 
+        Count is : {count}
+        Messages from Parents: {message1FromParent} {message2FromParent}
+        </template>
+    </lightning-card>
+    
+</template>
