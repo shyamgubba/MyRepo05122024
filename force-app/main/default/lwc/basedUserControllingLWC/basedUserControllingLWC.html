@@ -1,0 +1,13 @@
+<template>
+    <template if:true={canView}>
+        <!-- Your component's content goes here -->
+        <div>
+            <p>This content is visible only to selected users!</p>
+            <p>Account Name: {accountName}</p>
+            <p>Account Phone: {accountPhone}</p>
+        </div>
+    </template>
+    <template if:false={canView}>
+        <p>You do not have permission to view this component.</p>
+    </template>
+</template>
